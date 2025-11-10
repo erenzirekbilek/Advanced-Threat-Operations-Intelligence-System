@@ -1,4 +1,4 @@
-# 🛡️ Enterprise Log Analysis and Threat Detection System
+# Advanced-Threat-Operations-Intelligence-System
 
 ![Version](https://img.shields.io/badge/version-2.0-blue)
 ![Python](https://img.shields.io/badge/python-3.6+-green)
