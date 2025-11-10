@@ -1,6 +1,15 @@
 <<<<<<< HEAD
 # Advanced Threat & Operations Intelligence System
 
+# Proje Başlığı
+## Giriş
+## Kurulum
+### Sistem Gereksinimleri
+### Yükleme Adımları
+## Kullanım
+## Lisans
+
+
 Python kullanılarak geliştirilen bu sistem, şirketlerin ağ ve sistem aktivitelerini izleyen,
 tehditleri tespit eden ve güvenlik ile operasyonel kararları destekleyen bir platformdur.
 
