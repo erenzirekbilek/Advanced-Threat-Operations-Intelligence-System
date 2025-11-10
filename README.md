@@ -57,45 +57,6 @@ curl http://localhost:5000/api/threats
 curl http://localhost:5000/api/metrics
 ```
 
-## 📈 SİSTEM MİMARİSİ
-```
-┌──────────────────────────────────────────────────────┐
-│                   VERİ KAYNAKLARI                    │
-│  Firewall | Webserver | IDS | Syslog | Active Dir   │
-└────────────────────┬─────────────────────────────────┘
-                     │ (Logs via API/Syslog)
-                     ↓
-┌──────────────────────────────────────────────────────┐
-│              LOG INGESTION SERVICE                   │
-│           POST /api/ingest/log                       │
-└────────────────────┬─────────────────────────────────┘
-                     │
-                     ↓
-┌──────────────────────────────────────────────────────┐
-│          TEHDİT TESPİT MOTORLERİ                    │
-│  ┌────────────┐ ┌────────────┐ ┌────────────┐      │
-│  │ Signature  │ │  Anomaly   │ │ Behavioral │      │
-│  │  Based     │ │ Detection  │ │  Analysis  │      │
-│  └────────────┘ └────────────┘ └────────────┘      │
-└────────────────────┬─────────────────────────────────┘
-                     │
-                     ↓
-┌──────────────────────────────────────────────────────┐
-│              VERİTABANI (SQLite/PostgreSQL)          │
-│   SystemLog | ThreatDetection | ComplianceCheck     │
-└────────────────────┬─────────────────────────────────┘
-                     │
-                     ↓
-┌──────────────────────────────────────────────────────┐
-│                  REST API ENDPOINTS                  │
-│  /threats | /metrics | /analytics | /compliance     │
-└────────────────────┬─────────────────────────────────┘
-                     │
-                     ↓
-┌──────────────────────────────────────────────────────┐
-│              REACT FRONTEND DASHBOARD                │
-│    Gerçek zamanlı görselleştirme ve uyarılar        │
-└──────────────────────────────────────────────────────┘
 ### 🚀 Performans
 
 - **10,000+ logs/second** işleme kapasitesi
