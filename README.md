@@ -1,31 +1,83 @@
-<<<<<<< HEAD
-# Advanced Threat & Operations Intelligence System
+# Advanced-Threat-Operations-Intelligence-System
 
-Python kullanılarak geliştirilen bu sistem, şirketlerin ağ ve sistem aktivitelerini izleyen,
-tehditleri tespit eden ve güvenlik ile operasyonel kararları destekleyen bir platformdur.
+![Version](https://img.shields.io/badge/version-2.0-blue)
+![Python](https://img.shields.io/badge/python-3.6+-green)
+![License](https://img.shields.io/badge/license-MIT-orange)
+![Status](https://img.shields.io/badge/status-production--ready-success)
 
-## Kurulum
+Advanced-Threat-Operations-Intelligence-System (ATOIS), kurumsal seviyede siber tehdit tespiti, log analizi ve security intelligence sağlamak için geliştirilmiş modüler bir Python platformudur. Sistem, gerçek zamanlı ve geçmişe dönük verileri analiz ederek, şüpheli aktiviteleri otomatik olarak tespit eder ve raporlar.
+
+## 📋 İçindekiler
+
+- [Özellikler](#-özellikler)
+- [Kurulum](#-kurulum)
+- [Hızlı Başlangıç](#-hızlı-başlangıç)
+- [Desteklenen Log Formatları](#-desteklenen-log-formatları)
+- [Tehdit Tespit Yetenekleri](#-tehdit-tespit-yetenekleri)
+- [Konfigürasyon](#️-konfigürasyon)
+- [Kullanım Örnekleri](#-kullanım-örnekleri)
+- [Çıktı Formatları](#-çıktı-formatları)
+- [Veritabanı Şeması](#-veritabanı-şeması)
+- [Performans](#-performans)
+- [API Referansı](#-api-referansı)
+- [Örnek Senaryolar](#-örnek-senaryolar)
+- [Sorun Giderme](#-sorun-giderme)
+- [Katkıda Bulunma](#-katkıda-bulunma)
+- [Lisans](#-lisans)
+
+---
+
+## ✨ Özellikler
+
+### 🔐 Güvenlik
+
+- Brute-force saldırıları, SQL Injection, XSS, DDoS, Credential Stuffing gibi farklı saldırı türlerini tespit eder.
+- Blacklist ve Reputation-based IP kontrolü ile şüpheli kaynakları filtreler.
+- **IP İtibar Sistemi**: Dinamik IP reputation scoring (0-100)
+- **Otomatik Engelleme**: Threshold-based IP blocking
+- **Multi-vector Attack Detection**: Koordineli saldırı tespiti
+- **Confidence Scoring**: 0-100% güvenilirlik skorları
+
+### 📊 Analiz
+
+- **İstatistiksel Anomali Tespiti**: Z-score ve IQR yöntemleri
+- **Time-Series Analysis**: Zaman serisi pattern recognition
+- **Correlation Detection**: Olaylar arası korelasyon analizi
+- **Performance Metrics**: Response time, error rate, throughput tracking
+- **Traffic Pattern Analysis**: Saatlik/günlük trafik analizi
+
+### 💾 Veri Yönetimi
+
+- **SQLite Database**: Kalıcı veri depolama
+- **Historical Tracking**: Tarihsel veri sorguları
+- **Efficient Indexing**: Hızlı veritabanı sorguları
+- **Data Export**: JSON, CSV, HTML formatlarında export
+
+curl http://localhost:5000/api/threats
+curl http://localhost:5000/api/metrics
+```
+
+### 🚀 Performans
+
+- **10,000+ logs/second** işleme kapasitesi
+- **Memory Efficient**: Batch processing ile düşük bellek kullanımı
+- **Streaming Support**: GB seviyesi dosyalar için
+- **Gzip Support**: Sıkıştırılmış log dosyaları
+- **Concurrent Processing**: Thread-safe operations
+
+### 📈 Raporlama
+
+- **Console Report**: Real-time görsel raporlar
+- **JSON Export**: API entegrasyonu için
+- **CSV Export**: Excel ve data analysis tools için
+- **HTML Dashboard**: İnteraktif web dashboard
+- **Automated Recommendations**: Aksiyon önerileri
+
+---
+
+## 📦 Kurulum
+
+### Gereksinimler
+
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
-=======
-# Advanced Threat & Operations Intelligence System (ATOIS)
-
-Enterprise-level threat detection and operational intelligence system
-with anomaly detection, visualization, and reporting.
-
-## Features
-- SQL Server data extraction
-- Simulated sensor data generation for testing
-- Z-score based anomaly detection
-- Threat classification (Critical / High / Medium / Low)
-- HTML dashboard with CSV & PNG export
-- CLI-based workflow
-
-## Installation
-```bash
-git clone https://github.com/<your_username>/Advanced-Threat-Operations-Intelligence-System.git
-cd Advanced-Threat-Operations-Intelligence-System
->>>>>>> 81679f62c4e5e9bbe78b1150838c7ea702640d18
-pip install -r requirements.txt
+Python 3.6 veya üzeri
