@@ -49,3 +49,9 @@
 2025-11-10 20:55:11,442 INFO esip: Database initialized
 2025-11-10 20:55:11,444 INFO esip: Background threat analysis thread started
 2025-11-10 20:55:11,445 INFO esip: ESIP Backend started on port 5000
+2025-11-10 20:55:39,082 INFO esip: Database initialized
+2025-11-10 20:55:39,084 INFO esip: Background threat analysis thread started
+2025-11-10 20:55:39,085 INFO esip: ESIP Backend started on port 5000
+2025-11-10 20:55:39,985 INFO esip: Database initialized
+2025-11-10 20:55:39,987 INFO esip: Background threat analysis thread started
+2025-11-10 20:55:39,992 INFO esip: ESIP Backend started on port 5000
